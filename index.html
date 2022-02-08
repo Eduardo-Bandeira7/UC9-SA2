@@ -1,31 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Home | Sky Heaven</title>
 </head>
-<body>
+
+<body onload="mostrarPopup()">
     <header>
-        <div class="container-grid">
-            <img src="img/skyrim logo.jpg" style="width: 150px; height: 100px;" alt="simbolo skyrim">
-            <a href=""><img src="img/the elder scrools.png" style="width: 200px; height: 100px;" alt="the elder scrools"></a>
-            <nav class="menu">
+        <div class="container-grid posicionamento-header">
+            <a href=""><img src="img/the elder scrools.png" style="width: 200px; height: 100px;"
+                    alt="the elder scrools"></a>
+            <nav id="menu" class="menu">
                 <a href="">Inicio</a>
                 <a href="">Produtos</a>
                 <a href="">Perfil</a>
                 <a href="">Carrinho</a>
             </nav>
+            <img onclick="mostrarMenu()" class="barras" src="img/menu sanduiche.png" alt="menu sanduiche"></a>
         </div>
     </header>
     <div class="banner">
         <div class="container-grid posição-texto">
-        <div class="texto-banner">
-            <h1>Become a Dragonborn!</h1>
-            <p>O maior protal de Skyrim do Brasil</p>
+            <div class="texto-banner">
+                <h1>Become a Dragonborn!</h1>
+                <p>O maior protal de Skyrim do Brasil</p>
+            </div>
         </div>
-    </div>
+        <section class="secao-sobre">
+            <div class="conteudo-sobre container">
+                <div class="row">
+                    <div class="texto-sobre col">
+                        <h2>Aventure-se por toda Tamriel</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dolores perferendis tenetur
+                            sequi obcaecati quae hic, impedit quam iusto veniam, nihil est in, aspernatur nesciunt.
+                            Autem vero aperiam nobis iusto. lor</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fugit sapiente alias modi
+                            quam provident asperiores unde! Omnis nemo, accusantium fuga deserunt provident sunt beatae
+                            dolore ea, laboriosam magni facere?</p>
+                    </div>
+                    <div class="container-video col">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JSRtYpNRoN0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao-sobre2">
+            <div class="conteudo-sobre2 container">
+                <div class="row">
+                    <div class="contaier-video2 col">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lTjRZ__-278"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="texto-sobre2 col">
+                        <h2>Salve todos da maldição dos dragões</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas aliquid id labore est
+                            ipsum esse perspiciatis. Consequuntur repellat, mollitia commodi harum cum omnis doloremque
+                            iste
+                            error debitis enim! Molestias!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate accusamus ab repellat
+                            placeat, necessitatibus veritatis doloremque debitis iusto error earum porro fugiat, officia
+                            ea,
+                            architecto amet nobis officiis! Nisi, neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-noticias">
+            <div class="container">
+                <div class="bloco-de-noticias">
+                    <h2>Notícias</h2>
+                    <div class="content-news">
+                        <div class="card-news">
+                            <img src="img/card news1.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                        <div class="card-news">
+                            <img src="img/card news2.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                        <div class="card-news">
+                            <img src="img/card news3.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                        <div class="card-news">
+                            <img src="img/card news4.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                        <div class="card-news">
+                            <img src="img/card news5.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                        <div class="card-news">
+                            <img src="img/card news6.jpeg" alt="Skyrim news">
+                            <h3>Título da notícia</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
+                                voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
+                                unde modi doloribus reprehenderit.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="tutoriais">
+                    <h3>Tutoriais</h3>
+                    <div class="tutoriais-bg">
+                        <div class="topicos">
+                            <ul>
+                                <a href="#">
+                                    <li>Como instalar mods</li>
+                                </a>
+                                <a href="#">
+                                    <li>Dinheiro infinito</li>
+                                </a>
+                                <a href="#">
+                                    <li>Dano infinito</li>
+                                </a>
+                                <a href="#">
+                                    <li>Speedruns</li>
+                                </a>
+                                <a href="#">
+                                    <li>Cavalo Voador</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tutorial de poções</li>
+                                </a>
+                                <a href="#">
+                                    <li>Encantamentos</li>
+                                </a>
+                                <a href="#">
+                                    <li>Shouts</li>
+                                </a>
+                                <a href="#">
+                                    <li>Artefatos daédricos</li>
+                                </a>
+                                <a href="#">
+                                    <li>Pedras de barenziah</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </section>
+        <footer>
+            <div class="rodape container">
+                <div class="links-footer">
+                    <div class="links">
+                        <h3>Links Úteis</h3>
+                        <ul>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Central de ajuda</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h3>Páginas</h3>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Mods</a></li>
+                            <li><a href="#">Acessórios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="gif-rodape" src="img/dancing gif1.gif" alt="gif dançante">
+                <div class="sociais">
+                    <h3>Faça parte de nossa comunidade!</h3>
+                    <form action="">
+                        <input id="campo-email" type="email" placeholder="E-mail" required>
+                        <button onclick="enviarEmail()">Fus-Ro-Dah!</button>
+                    </form>
+                    <div class="siga-nos">
+                        <h3>Siga-nos:</h3>
+                        <a href="#"><img src="img/insta.png" alt="instagram"></a>
+                        <a href="#"><img src="img/youtube.png" alt="youTube"></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+        <script>
+            let menu = document.getElementById("menu")
+
+            function mostrarMenu() {
+                if (menu.style.display != "flex") {
+                    menu.style.display = "flex"
+                } else {
+                    menu.style.display = "none"
+                }
+            }
+        </script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
