@@ -37,7 +37,7 @@ let listaNoticias = [
 ]
 
 function renderizarNoticias() {
-    let espaco = document.getElementById("espaco-niticias")
+    let espaco = document.getElementById("espaco-noticias")
 
     let template = "";
 
@@ -46,13 +46,10 @@ function renderizarNoticias() {
 
         template += ` <div class="card-news">
         <img src="img/card news1.jpeg" alt="Skyrim news">
-        <h3>Título da notícia</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut iure, consequatur
-            voluptatem sint dolore ab eos fuga eius cumque et repellat fugiat eveniet rem omnis,
-            unde modi doloribus reprehenderit.</p>
+        <h3>${noticias.titulo}</h3>
+        <p>${noticias.descricao}</p>
     </div>`
     }
 
     espaco.innerHTML = template
-
 }

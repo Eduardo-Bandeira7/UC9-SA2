@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.login_header{
+    height: 100px;
+    background-color: black;
+}
+
+.login_header-icone img{
+    height: 100px;
+    margin-left: 15px;
+}
+
+.area_login-login{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.area_login-login img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.area_login-login h1{
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 136, 136);
+}
