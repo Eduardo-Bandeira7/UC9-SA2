@@ -31,7 +31,7 @@ header{
 }
 .banner{
     height: 700px;
-    background-image: url(../img/banner1.png);
+    background-image: url(../img/banner0.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -43,6 +43,14 @@ header{
     color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+}
+/* 
+#carrosel{
+    display: none;
+} */
+
+.banner-ativo{
+    display: flex;
 }
 .posição-texto{
     justify-content: flex-end;
@@ -219,5 +227,9 @@ button{
     .menu a{
         align-items: center;
         padding: 15px;
+    }
+
+    .menu-ativo{
+        display: flex;
     }
 }

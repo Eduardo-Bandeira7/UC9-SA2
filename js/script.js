@@ -1,3 +1,39 @@
+// $(document).ready(function () {
+//     $("carrosel img:eq(0)").addClass("banner-ativo").show()
+// })
+
+// setInterval(slide, 3000)
+
+// function slide() {
+
+
+
+//     if ($(".banner-ativo").next().length) {
+//         $(".banner-ativo").removeClass(".banner-ativo").hide().next().addClass(".banner-ativo").show()
+//     } else {
+//         $(".banner-ativo").removeClass().hide()
+//         $("carrosel img:eq(0)").addClass("banner-ativo").show()
+//     }
+// }
+
+$(document).ready(function () {
+
+    $("#barras").click(function () {
+        $("#menu").toggleClass("#menu-ativo")
+    })
+})
+
+
+
+//     $("#barras").click(function () {
+//         if ($("#menu").hasclass("#menu-ativo")) {
+//             $("#menu").removeclass("#menu-ativo")
+//         } else {
+//             $("#menu").addclass("#menu-ativo")
+//         }
+//     })
+// })
+
 // function mostrarPopup() {
 //     window.alert("Hello World!")
 // }
@@ -19,8 +55,8 @@ let listaNoticias = [
         descricao: "Acompanhe todas as atualizações sobre a futara obra de arte chama TES6"
     },
     {
-        titulo: "Como deixar seu jogo o masi realista possível",
-        descricao: "Com mais de 1200 mods, um usuário do Redit transformou seu jogo em uma experiência ultra-realista. Quase imperceptível da realidade"
+        titulo: "Como deixar seu jogo o mais realista possível",
+        descricao: "Com mais de 1200 mods, um usuário do Redit transformou seu jogo em uma experiência ultra-realista."
     },
     {
         titulo: "Update 4.0 da Skyrim Special Edition",

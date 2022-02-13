@@ -16,17 +16,39 @@
         </div>
     </header>
 
-    <section class="area_login">
-        <div class="area_login-login">
+    <div class="area_login">
+        <div class="area_login-nome">
             <!-- <img src="img/login1.png" alt="icone login"> -->
             <h1>Login do cliente</h1>
         </div>
 
-        <label>e-amail:</label>
-    </section>
 
+        <p class="texto">e-mail:</p>
+        <div class="area_login-formulario">
+            <div>
+                <form action="">
+                    <input id="campo-email" class="area_login-email-e-senha" type="e-mail"
+                        placeholder="Ex:joaosilva@gmail.com" required>
 
+                    <p class="texto">senha:</p>
 
+                    <input id="campo-senha" class="area_login-email-e-senha" type="password" required>
+
+                    <button onclick="enviarLogin()">Acessar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <p class="esqueceu"><a href="#">esqueceu a senha?</a></p>
+
+        <p class="acesso">não tem cadastro? <a href="#">Cadastre-se</a></p>
+
+        <p class="politica">Ao continuar com o acesso, você concorda com a nossa</p>
+
+        <a class="privacidade" href="#">politica de privacidade</a>
+    </div>
 </body>
 
 </html>
