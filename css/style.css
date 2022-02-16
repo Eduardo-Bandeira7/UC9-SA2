@@ -210,6 +210,12 @@ button{
     .menu a{
         font-size: 16px;
     }
+
+    .banner{
+        background-image: url(../img/banner0.png);
+        height: 400px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 768px) {
     .barras{
@@ -231,5 +237,22 @@ button{
 
     .menu-ativo{
         display: flex;
+    }
+    
+    .banner{
+        background-image: url(../img/banner0.png);
+        height: 400px;
+        width: 100%;
+    }
+    .secao-sobre{
+        background-image: url(../img/landscape.jpg);
+        height: 480px;
+    }
+
+    .secao-sobre2{
+        background-image: url(../img/landscape5.jpg);
+        height: 425px;
+        width: 100%;
+        margin: 0;
     }
 }
